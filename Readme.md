@@ -20,7 +20,7 @@ $ sudo docker pull andrejzirko/minio-arm64
 
 # Run Minio Standalone on Docker
 ```
-sudo docker run -p 9000:9000 -v /export/minio -v /export/mino-config:/root/.minio minio-arm64 server /export
+$ sudo docker run -p 9000:9000 -v /tmp/minio/export:/export -v /tmp/minio/config:/root/.minio andrejzirko/minio-arm64 server /export
 ```
 
 # Detailed information
