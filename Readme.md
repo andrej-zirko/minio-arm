@@ -1,5 +1,5 @@
 # Minio Docker Container for ARM
-This Dockerfile installs Minio on your ARM-Plarform (e.g. Raspberry Pi)
+This Dockerfile installs Minio on your ARM64-Plarform (e.g. Odroid C2)
 
 # Minio
 Please visit the Minio Website for more details https://minio.io
@@ -10,17 +10,17 @@ Minio server is light enough to be bundled with the application stack, similar t
 
 # Installation
 ```
-$ sudo docker build -t minio-arm .
+$ sudo docker build -t minio-arm64 .
 ```
 
 Or you can pull it from hub.docker.io
 ```
-$ sudo docker pull pixelchrome/minio-arm
+$ sudo docker pull zirko/minio-arm64
 ```
 
 # Run Minio Standalone on Docker
 ```
-sudo docker run -p 9000:9000 -v /export/minio -v /export/mino-config:/root/.minio minio-arm server /export
+sudo docker run -p 9000:9000 -v /export/minio -v /export/mino-config:/root/.minio minio-arm64 server /export
 ```
 
 # Detailed information
@@ -30,5 +30,5 @@ A more detailed description can be found here https://docs.minio.io/docs/minio-d
 Distributed Minio on Docker has not been tested
 
 # Links
-GitHub Repository - https://github.com/pixelchrome/minio-arm
-Docker Hub Repository - https://hub.docker.com/r/pixelchrome/minio-arm
+GitHub Repository - https://github.com/andrej-zirko/minio-arm
+Docker Hub Repository - https://hub.docker.com/r/andrej-zirko/minio-arm
