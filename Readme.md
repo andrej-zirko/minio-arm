@@ -30,5 +30,5 @@ A more detailed description can be found here https://docs.minio.io/docs/minio-d
 Distributed Minio on Docker has not been tested
 
 # Links
-GitHub Repository - https://github.com/andrej-zirko/minio-arm
-Docker Hub Repository - https://hub.docker.com/r/andrej-zirko/minio-arm
+GitHub Repository - https://github.com/andrej-zirko/minio-arm64
+Docker Hub Repository - https://hub.docker.com/r/andrej-zirko/minio-arm64
