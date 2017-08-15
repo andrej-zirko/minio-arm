@@ -1,10 +1,10 @@
-FROM armhf/alpine
+FROM arm64v8/alpine
 
 RUN apk add --no-cache curl
 
 RUN curl --silent --show-error --fail --location \
 	--header "Accept: application/tar+gzip, application/x-gzip, application/octet-stream" -o /usr/bin/minio \
-	"https://dl.minio.io/server/minio/release/linux-arm/minio" \
+	"https://dl.minio.io/server/minio/release/linux-arm64/minio" \
 	 && chmod 0755 /usr/bin/minio
 
 EXPOSE 9000
