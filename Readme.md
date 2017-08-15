@@ -15,7 +15,7 @@ $ sudo docker build -t minio-arm64 .
 
 Or you can pull it from hub.docker.io
 ```
-$ sudo docker pull zirko/minio-arm64
+$ sudo docker pull andrejzirko/minio-arm64
 ```
 
 # Run Minio Standalone on Docker
@@ -31,4 +31,5 @@ Distributed Minio on Docker has not been tested
 
 # Links
 GitHub Repository - https://github.com/andrej-zirko/minio-arm64
-Docker Hub Repository - https://hub.docker.com/r/andrej-zirko/minio-arm64
+
+Docker Hub Repository - https://hub.docker.com/r/andrejzirko/minio-arm64
