@@ -10,17 +10,17 @@ Minio server is light enough to be bundled with the application stack, similar t
 
 # Installation
 ```
-$ sudo docker build -t minio-arm64 .
+$ docker build -t minio-arm64 .
 ```
 
 Or you can pull it from hub.docker.io
 ```
-$ sudo docker pull andrejzirko/minio-arm64
+$ docker pull andrejzirko/minio-arm64
 ```
 
 # Run Minio Standalone on Docker
 ```
-$ sudo docker run -p 9000:9000 -v /tmp/minio/export:/export -v /tmp/minio/config:/root/.minio andrejzirko/minio-arm64 server /export
+$ docker run -p 9000:9000 -v /tmp/minio/export:/export -v /tmp/minio/config:/root/.minio andrejzirko/minio-arm64 server /export
 ```
 
 # Detailed information
